@@ -1,0 +1,26 @@
+{
+  "name": "unittest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "product.class.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "clearMocks": true, 
+    "collectCoverage": true, 
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/*.class.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "coverageDirectory": "outputCoverage",
+    "coverageReporters": ["json", "text"]
+  }
+}
