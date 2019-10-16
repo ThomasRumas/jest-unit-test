@@ -9,11 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^25.0.0"
   },
   "jest": {
-    "clearMocks": true, 
-    "collectCoverage": true, 
+    "clearMocks": true,
+    "collectCoverage": true,
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
       "!**/*.class.{js,jsx}",
@@ -21,6 +21,9 @@
       "!**/vendor/**"
     ],
     "coverageDirectory": "outputCoverage",
-    "coverageReporters": ["json", "text"]
+    "coverageReporters": [
+      "json",
+      "text"
+    ]
   }
 }
